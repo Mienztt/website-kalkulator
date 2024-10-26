@@ -1,0 +1,135 @@
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background-color: #f0f0f0; */
+  background: url(img/SaturnMountain.jpg);
+}
+
+.calculator {
+  width: 300px;
+  border: 2px solid #003366;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.display {
+  /* border: solid 10px #ccc; */
+  /* box-shadow: 0 0 0 3px gray; */
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.equation {
+  width: 100%;
+  font-size: 1.2em;
+  color: #555;
+  text-align: center;
+  margin-bottom: 5px;
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.result {
+  /* display: flex; */
+  gap: 15px;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 2em;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.button {
+  padding: 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button.red {
+  background-color: #c00000;
+}
+.button.brown {
+  background-color: #974807;
+}
+.button.blue {
+  background-color: #376091;
+}
+.button.purple {
+  background-color: #7030a0;
+}
+.button.dark {
+  background-color: #333;
+}
+.button.green {
+  background-color: #00b050;
+}
+.bg-dark-brown {
+  background: #4a452a;
+}
+
+.button:hover {
+  filter: brightness(1.1);
+}
+
+.equal {
+  grid-column: span 4;
+  background-color: #4caf50;
+}
+.equation span {
+  display: inline-block;
+  font-size: 1.2em;
+  color: #555;
+  width: 100%;
+  /* background: darkblue; */
+  padding: 5px 10 px;
+  border: solid 1px #ccc;
+  /* box-shadow: 0 0 0 1px gray; */
+  text-align: center;
+}
+
+.result {
+  font-size: 2em;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  padding-top: 10px;
+  /* border: solid 5px #ccc; */
+  box-shadow: 0 0 1px gray;
+}
+.equation div {
+  width: 100%;
+  /* background: darkblue; */
+  padding: 5px 10 px;
+}

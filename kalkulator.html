@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sayid Kalkulator</title>
+    <link rel="stylesheet" href="kalkulator.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <h2>SAYID KALKULATOR</h2>
+      <div class="display">
+        <div class="equation">
+          <span id="num1"></span>
+          <span id="operator"></span>
+          <span id="num2"></span>
+          <span id="equalSign"></span>
+        </div>
+        <div class="result" id="result">0</div>
+      </div>
+      <div class="buttons">
+        <button class="button red" onclick="clearDisplay()">C</button>
+        <button class="button bg-dark-brown" onclick="toggleSign()">+/-</button>
+        <button class="button brown" onclick="factorial()">!</button>
+        <button class="button brown" onclick="addOperator('^')">^</button>
+        <button class="button blue" onclick="addNumber('7')">7</button>
+        <button class="button blue" onclick="addNumber('8')">8</button>
+        <button class="button blue" onclick="addNumber('9')">9</button>
+        <button class="button brown" onclick="addOperator('%')">%</button>
+        <button class="button blue" onclick="addNumber('4')">4</button>
+        <button class="button blue" onclick="addNumber('5')">5</button>
+        <button class="button blue" onclick="addNumber('6')">6</button>
+        <button class="button purple" onclick="addOperator('/')">/</button>
+        <button class="button blue" onclick="addNumber('1')">1</button>
+        <button class="button blue" onclick="addNumber('2')">2</button>
+        <button class="button blue" onclick="addNumber('3')">3</button>
+        <button class="button purple" onclick="addOperator('*')">×</button>
+        <button class="button blue" onclick="addNumber('0')">0</button>
+        <button class="button bg-dark-brown" onclick="addNumber('.')">.</button>
+        <button class="button purple" onclick="addOperator('+')">+</button>
+        <button class="button purple" onclick="addOperator('-')">-</button>
+        <button class="button green equal" onclick="calculate()">=</button>
+      </div>
+    </div>
+    <script src="kalkulator.js"></script>
+  </body>
+</html>
